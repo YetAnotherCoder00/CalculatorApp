@@ -82,23 +82,32 @@ public partial class MainPage : ContentPage
         if (num01 != 0)
         {
             double num02 = Convert.ToDouble(output_string);
+            decimalpressed = false;
             switch (operation)
             {
                 case "+":
                     output.Text = $"{num01 + num02}";
                     output_string = Convert.ToString(num01 + num02);
+                    output_string = "";
+                    num01 += num02;
                     break;
                 case "-":
                     output.Text = $"{num01 - num02}";
                     output_string = Convert.ToString(num01 - num02);
+                    output_string = "";
+                    num01 += num02;
                     break;
                 case "*":
                     output.Text = $"{num01 * num02}";
                     output_string = Convert.ToString(num01 * num02);
+                    output_string = "";
+                    num01 += num02;
                     break;
                 case "/":
                     output.Text = $"{num01 / num02}";
                     output_string = Convert.ToString(num01 / num02);
+                    output_string = "";
+                    num01 += num02;
                     break;
                 default:
                     break;
@@ -116,23 +125,32 @@ public partial class MainPage : ContentPage
         if (num01 != 0)
         {
             double num02 = Convert.ToDouble(output_string);
+            decimalpressed = false;
             switch (operation)
             {
                 case "+":
                     output.Text = $"{num01 + num02}";
                     output_string = Convert.ToString(num01 + num02);
+                    output_string = "";
+                    num01 += num02;
                     break;
                 case "-":
                     output.Text = $"{num01 - num02}";
                     output_string = Convert.ToString(num01 - num02);
+                    output_string = "";
+                    num01 += num02;
                     break;
                 case "*":
                     output.Text = $"{num01 * num02}";
                     output_string = Convert.ToString(num01 * num02);
+                    output_string = "";
+                    num01 += num02;
                     break;
                 case "/":
                     output.Text = $"{num01 / num02}";
                     output_string = Convert.ToString(num01 / num02);
+                    output_string = "";
+                    num01 += num02;
                     break;
                 default:
                     break;
@@ -150,23 +168,32 @@ public partial class MainPage : ContentPage
 		if (num01 != 0)
 		{
 			double num02 = Convert.ToDouble(output_string);
+            decimalpressed = false;
             switch (operation)
             {
                 case "+":
                     output.Text = $"{num01 + num02}";
                     output_string = Convert.ToString(num01 + num02);
+                    output_string = "";
+                    num01 += num02;
                     break;
                 case "-":
                     output.Text = $"{num01 - num02}";
                     output_string = Convert.ToString(num01 - num02);
+                    output_string = "";
+                    num01 += num02;
                     break;
                 case "*":
                     output.Text = $"{num01 * num02}";
                     output_string = Convert.ToString(num01 * num02);
+                    output_string = "";
+                    num01 += num02;
                     break;
                 case "/":
                     output.Text = $"{num01 / num02}";
                     output_string = Convert.ToString(num01 / num02);
+                    output_string = "";
+                    num01 += num02;
                     break;
                 default:
                     break;
@@ -184,28 +211,37 @@ public partial class MainPage : ContentPage
         if (num01 != 0)
         {
             double num02 = Convert.ToDouble(output_string);
+            decimalpressed = false;
             switch (operation)
             {
                 case "+":
                     output.Text = $"{num01 + num02}";
                     output_string = Convert.ToString(num01 + num02);
+                    output_string = "";
+                    num01 += num02;
                     break;
                 case "-":
                     output.Text = $"{num01 - num02}";
                     output_string = Convert.ToString(num01 - num02);
+                    output_string = "";
+                    num01 += num02;
                     break;
                 case "*":
                     output.Text = $"{num01 * num02}";
                     output_string = Convert.ToString(num01 * num02);
+                    output_string = "";
+                    num01 += num02;
                     break;
                 case "/":
                     output.Text = $"{num01 / num02}";
                     output_string = Convert.ToString(num01 / num02);
+                    output_string = "";
+                    num01 += num02;
                     break;
                 default:
                     break;
             }
-            
+
         }
         else
         {
@@ -217,32 +253,42 @@ public partial class MainPage : ContentPage
 	private void Equals(object sender, EventArgs e)
 	{
 		double num02 = Convert.ToDouble(output_string);
-		switch (operation)
-		{
-			case "+":
-				output.Text = $"{num01 + num02}";
-				output_string = Convert.ToString(num01 + num02);
-				break;
-			case "-":
-				output.Text = $"{num01 - num02}";
+        decimalpressed = false;
+        switch (operation)
+        {
+            case "+":
+                output.Text = $"{num01 + num02}";
+                output_string = Convert.ToString(num01 + num02);
+                output_string = "";
+                num01 += num02;
+                break;
+            case "-":
+                output.Text = $"{num01 - num02}";
                 output_string = Convert.ToString(num01 - num02);
+                output_string = "";
+                num01 += num02;
                 break;
-			case "*":
-				output.Text = $"{num01 * num02}";
+            case "*":
+                output.Text = $"{num01 * num02}";
                 output_string = Convert.ToString(num01 * num02);
+                output_string = "";
+                num01 += num02;
                 break;
-			case "/":
-				output.Text = $"{num01 / num02}";
+            case "/":
+                output.Text = $"{num01 / num02}";
                 output_string = Convert.ToString(num01 / num02);
+                output_string = "";
+                num01 += num02;
                 break;
-			default:
-				break;
-		}
-	}
+            default:
+                break;
+        }
+    }
 
 	private void Clear(object sender, EventArgs e)
 	{
-		output_string = "";
+        num01 = 0;
+        output_string = "";
 		operation = "";
 		decimalpressed = false;
 		output.Text = "0";
