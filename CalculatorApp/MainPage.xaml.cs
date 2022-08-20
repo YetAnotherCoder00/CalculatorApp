@@ -293,6 +293,9 @@ public partial class MainPage : ContentPage
                 default:
                     break;
             }
+            output_string = "";
+            decimalpressed = false;
+            operation = "";
         }
     }
 
