@@ -1,7 +1,4 @@
-﻿using System.Reflection.Metadata;
-using System.Reflection.Metadata.Ecma335;
-
-namespace CalculatorApp;
+﻿namespace CalculatorApp;
 
 public partial class MainPage : ContentPage
 {

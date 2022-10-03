@@ -4,7 +4,7 @@
              x:Class="CalculatorApp.MainPage">
 
 
-    <Grid Padding="25, 25, 25, 25">
+    <Grid Padding="10, 10, 10, 10">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.5*"/>
             <RowDefinition Height="*"/>
@@ -21,34 +21,52 @@
 
         <Label
             x:Name="output"
-            Grid.Column="1"
+            Grid.Column="0"
             Text="0"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
             HorizontalOptions="Center"
-            VerticalOptions="Center"/>
+            VerticalOptions="Center"
+            FontSize="Large"
+            Grid.ColumnSpan="3"/>
+        
+        
 
         <Button
             Grid.Column="0"
             Grid.Row="1"
             Text="7"
-            Clicked="Seven"/>
+            Clicked="Seven"
+            CornerRadius="0"
+            FontSize="Large"
+            BorderWidth="1"/>
 
         <Button
             Grid.Column="0"
             Grid.Row="2"
             Text="4"
-            Clicked="Four"/>
+            Clicked="Four"
+            CornerRadius="0"
+            FontSize="Large"
+            BorderWidth="1"/>
 
         <Button
             Grid.Column="0"
             Grid.Row="3"
             Text="1"
-            Clicked="One"/>
+            Clicked="One"
+            CornerRadius="0"
+            FontSize="Large"
+            BorderWidth="1"/>
 
         <Button
             Grid.Column="0"
             Grid.Row="4"
             Text="="
-            Clicked="Equals"/>
+            Clicked="Equals"
+            CornerRadius="0"
+            FontSize="Large"
+            BorderWidth="1"/>
 
 
 
@@ -56,25 +74,37 @@
             Grid.Column="1"
             Grid.Row="1"
             Text="8"
-            Clicked="Eight"/>
+            Clicked="Eight"
+            CornerRadius="0"
+            FontSize="Large"
+            BorderWidth="1"/>
 
         <Button
             Grid.Column="1"
             Grid.Row="2"
             Text="5"
-            Clicked="Five"/>
+            Clicked="Five"
+            CornerRadius="0"
+            FontSize="Large"
+            BorderWidth="1"/>
 
         <Button
             Grid.Column="1"
             Grid.Row="3"
             Text="2"
-            Clicked="Two"/>
+            Clicked="Two"
+            CornerRadius="0"
+            FontSize="Large"
+            BorderWidth="1"/>
 
         <Button
             Grid.Column="1"
             Grid.Row="4"
             Text="0"
-            Clicked="Zero"/>
+            Clicked="Zero"
+            CornerRadius="0"
+            FontSize="Large"
+            BorderWidth="1"/>
         
         
 
@@ -82,55 +112,82 @@
             Grid.Column="2"
             Grid.Row="1"
             Text="9"
-            Clicked="Nine"/>
+            Clicked="Nine"
+            CornerRadius="0"
+            FontSize="Large"
+            BorderWidth="1"/>
 
         <Button
             Grid.Column="2"
             Grid.Row="2"
             Text="6"
-            Clicked="Six"/>
+            Clicked="Six"
+            CornerRadius="0"
+            FontSize="Large"
+            BorderWidth="1"/>
 
         <Button
             Grid.Column="2"
             Grid.Row="3"
             Text="3"
-            Clicked="Three"/>
+            Clicked="Three"
+            CornerRadius="0"
+            FontSize="Large"
+            BorderWidth="1"/>
 
         <Button
             Grid.Column="2"
             Grid.Row="4"
             Text="."
-            Clicked="Decimal"/>
+            Clicked="Decimal"
+            CornerRadius="0"
+            FontSize="Large"
+            BorderWidth="1"/>
 
 
         <Button
             Grid.Column="3"
             Text="c"
-            Clicked="Clear"/>
+            Clicked="Clear"
+            CornerRadius="0"
+            FontSize="Large"
+            BorderWidth="1"/>
 
         <Button
             Grid.Column="3"
             Grid.Row="1"
             Text="/"
-            Clicked="Divide"/>
+            Clicked="Divide"
+            CornerRadius="0"
+            FontSize="Large"
+            BorderWidth="1"/>
 
         <Button
             Grid.Column="3"
             Grid.Row="2"
             Text="*"
-            Clicked="Multiply"/>
+            Clicked="Multiply"
+            CornerRadius="0"
+            FontSize="Large"
+            BorderWidth="1"/>
         
         <Button
             Grid.Column="3"
             Grid.Row="3"
             Text="-"
-            Clicked="Subtract"/>
+            Clicked="Subtract"
+            CornerRadius="0"
+            FontSize="Large"
+            BorderWidth="1"/>
 
         <Button
             Grid.Column="3"
             Grid.Row="4"
             Text="+"
-            Clicked="Addition"/>
+            Clicked="Addition"
+            CornerRadius="0"
+            FontSize="Large"
+            BorderWidth="1"/>
 
     </Grid>
 
