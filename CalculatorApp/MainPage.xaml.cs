@@ -71,6 +71,7 @@ public partial class MainPage : ContentPage
             if (output_string == "")
             {
                 output_string += "0.";
+                decimalpressed = true;
             }
             else
             {
@@ -115,8 +116,6 @@ public partial class MainPage : ContentPage
                     default:
                         break;
                 }
-
-                decimalpressed = false;
             }
 
         }
@@ -127,6 +126,7 @@ public partial class MainPage : ContentPage
         }
         operation = "/";
         num02 = 0;
+        decimalpressed = false;
     }
     private void Multiply(object sender, EventArgs e)
     {
@@ -161,9 +161,9 @@ public partial class MainPage : ContentPage
                     default:
                         break;
                 }
-                decimalpressed = false;
             }
             output_string = "";
+            num02 = 0;
         }
         else
         {
@@ -173,6 +173,7 @@ public partial class MainPage : ContentPage
         operation = "*";
         output_string = "";
         num02 = 0;
+        decimalpressed = false;
     }
     private void Subtract(object sender, EventArgs e)
     {
@@ -207,10 +208,10 @@ public partial class MainPage : ContentPage
                     default:
                         break;
                 }
-                decimalpressed = false;
             }
             output_string = "";
             num02 = 0;
+            decimalpressed = false;
 
             operation = "";
         }
@@ -256,7 +257,6 @@ public partial class MainPage : ContentPage
                     default:
                         break;
                 }
-                decimalpressed = false;
             }
             output_string = "";
             num02 = 0;
@@ -268,6 +268,7 @@ public partial class MainPage : ContentPage
         }
         operation = "+";
         num02 = 0;
+        decimalpressed = false;
     }
     private void Equals(object sender, EventArgs e)
     {
@@ -302,7 +303,6 @@ public partial class MainPage : ContentPage
                     default:
                         break;
                 }
-                decimalpressed = false;
             }
             output_string = "";
             num02 = 0;
@@ -314,6 +314,7 @@ public partial class MainPage : ContentPage
             output_string = "";
         }
         num02 = 0;
+        decimalpressed = false;
     }
 
     private void Clear(object sender, EventArgs e)
